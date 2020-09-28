@@ -4,7 +4,7 @@ from binary_search_tree import BSTNode
 # First I had to properly import the file, taken liberty from viewing filesio.py from out first run with Python - Intro-Python-I
 # The python file couldn't initially find the text files, even though they were self contained. Seems Python favors Root over others.
 # 35 seconds?!?!?! I actually quit it the first time I ran it because I thought something was BROKEN!!!
-# Alright,, first thing's first, we comment out the old code, and look into how to change that from o(n^2) to something more linear.
+# Alright,, first thing's first, we comment out the old code, and look into how to change that from O(n^3) to something more linear.
 # Build a Node, like the Double linked list, because we're comparing two lists.
 # Then we set it up to view doubles, and append the name to the array and print it out.
 # imported BSTNode from Data-Structures repository, applied to use it, and came up with 0.8 seconds!!!! Avg time: Under 1sec
