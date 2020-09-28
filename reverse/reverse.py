@@ -1,3 +1,6 @@
+# Reverse the line to go from tail to head..
+
+
 class Node:
     def __init__(self, value=None, next_node=None):
         self.value = value
@@ -39,4 +42,13 @@ class LinkedList:
         return False
 
     def reverse_list(self, node, prev):
-        pass
+        # reverse node
+        # with clues in the lines above, next needs to be previous, so it still prints the node
+        # So, instead of next = next, change next_node to previous node
+        while node:
+            reverse = node.next_node
+            node.next_node = prev
+            prev = node
+            node = reverse
+        self.head = prev
+        return node
