@@ -41,6 +41,12 @@ for names2 in names_2:
 
 # print(dup)
 
+# 0.8 seconds.
+# def intersect(names_1, names_2):
+#     return list(set(names_1) & set(names_2))
+
+# print(intersect(names_1, names_2))
+
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
@@ -51,8 +57,5 @@ print (f"runtime: {end_time - start_time} seconds")
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
 
-# def intersect(names_1, names_2):
-#     return list(set(names_1) & set(names_2))
 
-# print intersect(names_1, names_2)
 
